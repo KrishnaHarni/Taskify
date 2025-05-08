@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Taskify</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Taskify</h1>
+    </div>
+
+    <div class="box">
+        <div class="box-contents">
+            <h3>Task Title</h3>
+            <h4>Task Type</h4>
+            <p>Add your tasks - Organise Prioritize Achieve</p>
+            <button class="btn" onclick="deletetask(event)">Delete</button>
+        </div>
+    </div>
+
+    <div>
+        <button class="add-task" onclick="addTask()">+
+            <h6>Add Task</h6>
+        </button>
+
+    </div>
+
+    <div class="overlay"></div>
+    <form class="newbox">
+        <label>Task <span>*</span></label>
+        <input type="text" placeholder="Enter Title" class="title">
+        <label>Task Type <span>*</span></label>
+        <input type="text" placeholder="Reading,Watching,Learning,Work,etc.." class="type">
+        <label>Description <span>*</span></label>
+        <textarea placeholder="short note about task" class="description"></textarea>
+        <label>Link (optional)</label>
+        <input type="text" class="taskLink">
+        <label>Deadline <span>*</span></label>
+        <input type="date" class="date">
+        <label>Priority</label>
+        <select name="Priority" onclick="prior(this.value)">
+            <option value="Low" selected>Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select> <span>*</span>
+        <br>
+        <button class="add" onclick="addNewBox(event)">Add</button>
+        <button class="cancel" onclick="cancelNewBox(event)">Cancel</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
