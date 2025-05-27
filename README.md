@@ -1,6 +1,8 @@
 # 📋 Taskify - Task Management Web App
 
-Taskify is a simple and elegant task management application that helps you organize your daily tasks effectively. Whether it's reading a book, watching a video, or completing a project, Taskify ensures you're on top of your to-do list with features like deadlines, priorities, and persistent local storage.
+Taskify is a simple and elegant task management application that helps you organize your daily tasks effectively. Whether it's reading a book, watching a video, or completing a project, Taskify ensures you're on top of your to-do list with features like deadlines, priorities, and persistent local storage. <br/>
+
+## 🔗 [Live Demo](https://taskifytaskmanagement.netlify.app/)
 
 ## 🚀 Features
 
